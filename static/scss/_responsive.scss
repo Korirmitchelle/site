@@ -1,0 +1,794 @@
+/* ==========================================================================
+   Responsiveness Styles
+   ========================================================================== */
+/******************************************************************
+Larger Devices (e.g. wide-screen monitors)
+******************************************************************/
+@media (min-width: 1200px) {
+
+}
+
+
+/******************************************************************
+Medium Sized Devices (e.g. Desktops)
+******************************************************************/
+@media all and (max-width: 1200px) {
+  /* HomePage Slider */
+  .default-carousel img.slide-featured {
+    max-width: 580px;
+  }
+
+  /* Top Nav */
+  #wrapper .main-nav .navbar-nav > li {
+    margin: 0 5px;
+  }
+
+  /* Section: Saiba Access Feature */
+  .aa-feature {
+    padding-right: 15px;
+  }
+
+  /* Section: Saiba Connect Feature */
+  .ca-feature {
+    padding-right: 15px;
+
+    h3 {
+      height: 100px;
+    }
+  }
+
+  /* Section: Saiba Merchant Feature */
+  .ma-feature {
+    padding-right: 15px;
+
+    h3 {
+      height: 100px;
+    }
+  }
+
+  /* Section: Saiba Overview Feature */
+  .oa-feature {
+    padding-right: 15px;
+
+    h3 {
+      height: 80px;
+    }
+  }
+
+  /* Section: Saiba Wallet Feature */
+  .wa-feature {
+    padding-right: 15px;
+
+    h3 {
+      height: 80px;
+    }
+  }
+
+  /* Section: Saiba About Feature */
+  .aba-feature {
+    padding-right: 15px;
+
+    h3 {
+      height: 80px;
+    }
+  }
+
+  /* Section: Register Merchant */
+  .account-box.register {
+    top: -85px;
+  }
+
+  .default-carousel.register-header h1.slide-headline {max-width: initial; }
+  .default-carousel.register-header p.slide-caption {max-width: initial; }
+
+
+}
+
+/******************************************************************
+“Small Devices” (e.g. tablets) are targeted with
+******************************************************************/
+@media all and (max-width: 991px) {
+  /* Header */
+  header {
+    min-height: 570px;
+  }
+  .default-carousel {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+
+    &.access-header {
+      img.slide-featured {
+        right: 30px;
+        max-width: 180px;
+      }
+    }
+    &.merchant-header {
+      img.slide-featured {
+        right: 30px;
+        max-width: 180px;
+      }
+    }
+  }
+
+  /* Home Slider */
+  .default-carousel h1.slide-headline {
+    padding-top: 50px;
+    font-size: 50px;
+    line-height: 52px;
+    max-width: 350px;
+  }
+  .default-carousel p.slide-caption {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .default-carousel img.slide-featured {
+    max-width: 456px;
+    bottom: 0;
+  }
+  #wrapper .default-carousel .item {
+    max-width: 750px;
+    min-height: 500px;
+  }
+
+  #wrapper .slide-headline,
+  .slide-caption,
+  .highlight-text,
+  .slide-tools {
+    padding-left: 30px;
+  }
+
+  .default-carousel .custom-owl-nav {
+    top: initial;
+  }
+  .default-carousel {
+    position: relative;
+  }
+
+  #wrapper .custom-owl-dots {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .default-carousel .owl-dots {
+    text-align: center;
+  }
+
+  /* Nav */
+  #wrapper .navbar-brand {margin-right: 20px;}
+  #wrapper .main-nav .navbar-nav > li > a {padding: 10px 5px;}
+  #wrapper .main-nav .navbar-nav > li.become-a-merchant a {
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0;
+  }
+
+  #wrapper .main-nav .navbar-nav > li.open .dropdown-menu::before {
+    right: 24px;
+  }
+
+  /* Section: Home Features */
+  .default-section {
+    padding: 45px 0;
+  }
+  .default-section h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .feature-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .feature-item:first-child h2 {
+    height: 100px;
+  }
+  .feature-title {
+    height: 140px;
+  }
+
+  /* Section: Home Region */
+  .worldwide-connected {
+    display: none;
+  }
+  .region-box {
+    padding: 0 0 0 20px;
+  }
+
+  /* Section: Access Features */
+  .app-row {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .app-feature-info {
+    padding-bottom: 50px;
+    text-align: center;
+
+    .feature-title, .feature-summary {margin-left: auto; margin-right: auto}
+  }
+  .faq-list li {height: auto; margin-bottom: 5px}
+  #wrapper .faq-list li a i.fa {right: 15px;}
+  /* Section: Saiba Access Feature */
+  .ca-feature h3{
+    height: 130px;
+  }
+
+  /* Section: Saiba Merchant Feature */
+  .ma-feature h3{
+    height: 130px;
+  }
+
+  /* Section: Saiba Overview Feature */
+  .default-section h2.feature-title {
+    margin-top: 0;
+  }
+  .default-section.saiba-overview-features .feature-summary {margin-bottom: 0}
+
+  .app-feature-info {
+    padding-bottom: 15px;
+  }
+  .default-section.saiba-overview-features .feature-img {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .oa-feature h3{
+    height: 80px;
+  }
+
+  /* Section: Saiba Wallet Feature */
+  .wa-feature h3{
+    height: 80px;
+  }
+
+  /* Section: Saiba About Feature */
+  .aba-feature h3{
+    height: 80px;
+  }
+  #wrapper .main-nav {
+    margin-bottom: 0;
+  }
+  #wrapper .default-section.testimonials-section {
+    padding-top: 0;
+  }
+
+  .default-section.saiba-about-features .feature-img {
+    padding-top: 15px;
+  }
+
+  /* Account Pages: Sign In, Sign up */
+  .account-box .forgot-remember a {
+    float: none;
+  }
+
+  /* Page: Help */
+  .faq-category {
+    padding: 25px 0;
+    height: 180px;
+  }
+
+
+
+  /* Footer */
+  .main-footer {
+    padding-top: 25px;
+  }
+  .app-link {
+    margin-bottom: 50px;
+    img {max-width: 100%}
+  }
+
+
+}
+
+
+/******************************************************************
+Extra Small Devices (e.g. cell phones)
+******************************************************************/
+@media all and (max-width: 767px) {
+  /* Top Bar */
+  #wrapper .navbar-brand {margin: 15px}
+  #wrapper .navbar-toggle {
+    margin: 30px 25px 30px 30px;
+    border: 0;
+
+    &:hover, &:focus {
+      background: #d2004c;
+      color: #fff;
+
+      .icon-bar {background-color: #fff;}
+    }
+
+    .icon-bar {
+      background-color: #fff;
+      &:nth-child(2) {
+        max-width: 50%;
+      }
+      &:nth-child(3) {
+        max-width: 75%;
+      }
+    }
+
+    .badge {
+      position: absolute;
+      right: -10px;
+      top: 0;
+      background: #e90054;
+      font-size: 12px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  #wrapper .navbar-toggle {
+    border: none;
+    background: transparent !important;
+
+    &:hover {
+      background: transparent !important;
+    }
+
+    .icon-bar {
+      width: 22px;
+      transition: all 0.2s;
+      position: relative;
+      right: -20px;
+      &:nth-child(2) {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+        max-width: 100%;
+      }
+      &:nth-child(3) {
+        opacity: 0;
+        max-width: 100%;
+      }
+      &:nth-child(4) {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+      }
+    }
+    .badge {
+      opacity: 0;
+      @include transition(all 0.5s ease);
+    }
+
+
+  }
+
+  #wrapper .navbar-toggle.collapsed {
+    .icon-bar {right: 0}
+    .icon-bar:nth-child(2) {
+      transform: rotate(0);
+      max-width: 50%;
+    }
+    .icon-bar:nth-child(3) {
+      opacity: 1;
+      max-width: 75%;
+    }
+    .icon-bar:nth-child(4) {
+      transform: rotate(0);
+    }
+    .badge {
+      opacity: 1;
+      @include transition(all 0.5s ease);
+    }
+  }
+
+  /* Nav */
+  #TopNav {
+    background: rgba(48, 0, 74, 0.9);
+    padding: 10px 15px 30px 15px;
+    position: absolute;
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+  }
+  #wrapper .main-nav {
+
+    .navbar-nav {
+      padding: 0 0 10px 0;
+      margin: 0 0 12px 0;
+      border-bottom: 1px solid #4a3158;
+
+      li {margin: 0; padding: 10px 0}
+      li a {color: #aba4af;}
+      li a:hover, li.open a, li a:hover i, li.open a i {color: #e90054}
+      li a,li.become-a-merchant a {font-size: 24px}
+
+      li.features a,
+      li.products a{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      li.become-a-merchant {display: none}
+      li.become-a-merchant.mobile-only {
+        display: block;
+        a {
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          padding-top: 14px;
+          padding-bottom: 14px;
+        }
+      }
+      li.open ul.dropdown-menu {
+        padding-left: 15px;
+      }
+      li.open ul.dropdown-menu li {border: 0}
+      li.open ul.dropdown-menu li a {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+
+        &:hover {
+          background: none;
+          color: #d9004e;
+        }
+      }
+    }
+
+    .navbar-nav li.open .dropdown-menu {
+      background: none;
+      border: 0;
+      box-shadow: none;
+      &:before {display: none}
+    }
+    .quick-links {padding-bottom: 15px;}
+  }
+
+  #language-options-mobile {
+    margin: 30px 0 30px 0;
+
+    .btn-custom {
+      width: 100%;
+      min-width: 224px;
+      border-radius: 5px;
+      line-height: 30px;
+      border: 1px solid #d8d8de;
+      background: #fff;
+      padding: 0 15px;
+      text-align: left;
+      position: relative;
+
+      .caret {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      li:first-child a{cursor: default}
+      li:first-child a {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      li:last-child a {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      li a {
+        display: block;
+        line-height: 29px;
+        cursor: pointer}
+    }
+  }
+
+  #wrapper .legal-page .account-section,
+  #wrapper .help-page .account-section{
+    top: -140px;
+    margin-bottom: -140px;
+  }
+  #wrapper #search-topic p,
+  #wrapper .page-sidebar .sidebar-title{font-size:21px; text-align: center}
+
+  /* Header */
+  /*header {min-height: 410px;}*/
+
+  .default-carousel img.slide-featured.about-slide-featured {
+    top: 0;
+  }
+
+  #wrapper .default-carousel img.slide-featured {
+    position: relative;
+    display: block;
+    right: 0;
+    margin: 30px auto 0 auto;
+  }
+
+  #wrapper .slide-headline,
+  .slide-caption,
+  .highlight-text,
+  .slide-tools {
+    padding-left: 0;
+    text-align: center;
+    max-width: initial;
+  }
+
+  /* Home Slider */
+  .default-carousel img.slide-featured {
+    width: 100%;
+  }
+
+  .default-carousel h1.slide-headline {
+    padding-top: 0;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .default-carousel p.slide-caption {
+    width: 200px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slide-tools {display: none;}
+
+  #wrapper .btn-download {
+    line-height: 42px;
+  }
+  .default-carousel .custom-owl-nav {display: none}
+
+  #wrapper .custom-owl-dots {
+    width: 140px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  #wrapper .default-carousel .item {
+    min-height: 510px;
+  }
+
+  /* Access Header */
+  #wrapper .access-header {
+    .slide-caption  {margin: 0 auto; width: 250px}
+  }
+
+  #wrapper .merchant-header {
+    .slide-caption  {margin: 0 auto; width: 250px}
+  }
+  #wrapper .feature-item {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #wrapper .saiba-features .row:first-child .feature-item:first-child {padding-top: 0;}
+
+  /* Section: Home Features */
+  #wrapper .default-section {padding: 30px 0}
+  .feature-item {
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    &:first-child h2 {height: auto;}
+    &:first-child .feature-summary {height: auto}
+  }
+  .default-section h2.feature-title {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    height: auto;
+  }
+  #wrapper .feature-summary {
+    font-size: 18px;
+    line-height: 20px;
+    height: auto;
+  }
+  .saiba-access-features img {height: auto !important; max-width: 100%;}
+  .saiba-features .row:last-child .feature-item {margin-bottom: 0}
+
+  /* Section: Home Region */
+  .default-section .section-subtitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .worldwide-connected {display: none}
+  .region-box {
+    text-align: center;
+    padding: 0 0 30px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    .region-features {
+      text-align: left;
+      padding-left: 60px
+    }
+  }
+
+  /* Section: Access */
+  #wrapper .app-feature-info {
+    text-align: center;
+
+    .app-icon {
+      max-width: 36px;
+      margin-right: 10px;
+      position: relative;
+      margin-top: -2px;
+    }
+  }
+
+  .aa-feature{margin: 30px 0; text-align: center}
+
+  /* Section: Connect Features */
+  .ca-feature {
+    margin: 30px 0;
+    text-align: center;
+    h3 {
+      height: auto;
+    }
+  }
+  /* Section: Merchant Features */
+  .ma-feature {
+    margin: 30px 0;
+    text-align: center;
+    h3 {
+      height: auto;
+    }
+  }
+
+  /* Section: Overview Features */
+  .oa-feature {
+    margin: 30px 0;
+    text-align: center;
+    h3 {
+      height: auto;
+    }
+  }
+  .saiba-overview-features img {height: auto !important; max-width: 35%}
+
+  /* Section: Wallet Features */
+  .wa-feature {
+    margin: 30px 0;
+    text-align: center;
+    h3 {
+      height: auto;
+    }
+  }
+  .saiba-wallet-features img {height: auto !important; max-width: 100%}
+
+  /* Section: About Features */
+  .aba-feature {
+    margin: 30px 0;
+    text-align: center;
+    h3 {
+      height: auto;
+    }
+  }
+  .saiba-about-features img {height: auto !important; max-width: 100%}
+  .saiba-about-features img.who-we-are-featured {max-width: 50%; margin-bottom: 15px;}
+
+  /* Section: Register Merchant */
+  .account-box.contact {
+    top: 0;
+    border: 0;
+  }
+  #wrapper .contact-header .slide-headline{
+
+    padding-left: 15px;
+  }
+
+  #wrapper .contact-header .slide-caption {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  #wrapper .contact-header .social-list,
+  #wrapper .contact-header .slide-social{
+    text-align: center;
+  }
+
+  #wrapper .social-list li:last-child {
+    margin-right: 0;
+  }
+
+  .account-box .form-title {
+    margin-top: -15px;
+    border-radius: 0;
+  }
+  /* Fix Language/Country Dropdowns */
+  #wrapper .page-sidebar #country-selection .btn-custom {width: 100%}
+  #wrapper .page-sidebar #country-selection .dropdown-menu {width: 100%}
+
+  #wrapper .account-box.contact .form-group {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  header.rm-header {
+    min-height: 380px;
+  }
+  .account-box .checkbox {
+    padding-bottom: 15px;
+  }
+  .account-box.register {
+    top: 0;
+    margin-bottom: 60px;
+  }
+  .default-carousel.register-header h1.slide-headline {width: initial; }
+  .default-carousel.register-header p.slide-caption {width: initial; padding: 0 30px;}
+  .account-box .btn-newUser,
+  .account-box .btn-signIn {
+    padding: 0;
+  }
+
+  .merchant-feature-box {
+    padding-left: 0;
+    padding-top: 80px;
+    text-align: center;
+
+    img {bottom: initial; right: 0}
+  }
+
+  .user-action {display: none}
+  .faq-list li {height: auto}
+  /* Page: Help */
+  #wrapper #search-topic {
+    padding-top: 70px;
+  }
+  #wrapper .help-section .container .row {
+    margin: 0;
+  }
+
+  /* Page: Team */
+  #wrapper .section-header .country-options {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+  .team-section h2 {
+    text-align: center;
+    border: 0;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+
+  .jobs-category .panel-default > .panel-heading .panel-title a {
+    letter-spacing: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .jobs-category .panel-default > .panel-heading .panel-title a span {
+    display: none;
+  }
+
+  .jobs-category .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    padding: 15px;
+  }
+
+  /* Footer */
+  .download-app {
+    padding-top: 30px;
+    padding-left: 15px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .footer-copyright {margin-bottom: 30px; text-align: center}
+  .social-list{text-align:center;}
+  .footer-copyright {margin: 15px 0 0 0}
+  .main-footer .footer-disclaimer {padding-top: 10px; padding-bottom: 10px; text-align: center}
+  .main-footer .footer-links #language-options .btn-custom,
+  .main-footer .footer-links #language-options .dropdown-menu{
+    width: 100%;
+  }
+
+}
+

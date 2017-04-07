@@ -1,0 +1,154 @@
+
+{% extends 'base.html' %}
+{% block title %} Saiba - Team {% endblock %}
+
+{% block content %}
+
+    <div class="default-carousel merchant-header">
+      <h1 class="slide-headline">People Behind<br/>
+        The Product</h1>
+      <p class="slide-caption">
+        At Saiba we are creating a product that people love. We strive to create a delightful user
+        experience while connecting the world and empowering people through commerce
+      </p>
+
+      <img class="slide-featured about-slide-featured" src="/static/img/pages/team/team-featured.png" alt="About Featured" />
+    </div> <!-- ./merchant-header -->
+
+
+  </header> <!-- #/header-container -->
+
+  <main class="default-main">
+    <section class="default-section team-section">
+      <div class="container">
+        <h2>The Team</h2>
+        <div class="row">
+
+
+
+          {% for o in members %}
+
+          
+          <a href="#" class="col-xs-6 col-sm-3 team-member">
+            <span class="member-photo"><img src="../static/{{o.profile_picture}}" alt="{{o.frist_name}} - {{o.title}}" /></span>
+            <span class="member-name">{{o.frist_name}} <strong>{{o.title}}</strong></span>
+          </a>
+          
+{% endfor %}
+
+
+
+          <a href="mailto:{{o.contact_email}}" class="col-xs-6 col-sm-3 team-member join-us">
+            <span class="member-photo"></span>
+            <span class="member-name">Join Us <span class="send-cv">send your cv</span></span>
+          </a>
+        </div> <!-- ./row -->
+      </div> <!-- ./container -->
+    </section> <!-- ./team-section -->
+
+    <!--<section class="default-section team-section">
+      <div class="container">
+        <h2>Board of Directors</h2>
+        <div class="row">
+          <div class="col-xs-12 col-sm-9 center-block">
+            <div class="row">
+
+              {% for o in team_members %}
+                {% if o.is_director == True %}
+                  <a href="#" class="col-xs-6 col-sm-4 team-member no-photo-available">
+                    <span class="member-photo"> <img src="{{o.icon_url}}" alt="{{o.name}} - {{o.title}}" /></span>
+                    <span class="member-name">{{o.name}} <strong>{{o.title}}</strong></span>
+                  </a>
+                {% endif %}
+              {% endfor %}
+
+            </div> <!-- ./row -->
+          </div> <!-- ./center-block -->
+        </div> <!-- ./row -->
+
+-->
+
+      </div> <!-- ./container -->
+    </section> <!-- ./team-section -->
+
+    <section class="default-section team-section current-openings">
+      <div class="container">
+        <div class="section-header">
+          <h2>Current Openings</h2>
+          <div class="country-options"></div>
+        </div> <!-- ./section-header -->
+
+        <div class="jobs-category">
+          <h3>Engineering</h3>
+          <div class="panel-group" id="analytics-group" role="tablist" aria-multiselectable="true">
+
+          {% for engineer_jobs in engineer_jobs%}
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading-a1">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#analytics1" aria-expanded="true" aria-controls="analytics1">
+                    {{engineer_jobs.job_title}}
+
+                    <i class="fa fa-chevron-up"></i>
+                    <span>{{engineer_jobs.job_location}}</span>
+
+                  </a>
+                </h4>
+              </div>
+              <div id="analytics1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-a1">
+                <div class="panel-body">
+
+                 {{engineer_jobs.job_description |safe}}
+                </div>
+              </div>
+            </div> <!-- ./panel -->
+            {% endfor %}
+
+
+
+
+          
+
+
+
+            
+
+
+          </div> <!-- ./panel-group -->
+        </div> <!-- ./jobs-category -->
+
+        <div class="jobs-category">
+          <h3>Business Operations</h3>
+          <div class="panel-group" id="business-group" role="tablist" aria-multiselectable="true">
+
+            {% for operations_jobs in operations_jobs %}
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading-b1">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#business1" aria-expanded="true" aria-controls="business1">
+                    {{operations_jobs.job_title}}
+                    <i class="fa fa-chevron-up"></i>
+                    <span>{{operations_jobs.job_location}}</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="business1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-b1">
+                <div class="panel-body">
+                 {{operations_jobs.job_description |safe}}
+                </div>
+              </div>
+            </div> <!-- ./panel -->
+            {% endfor %}
+
+
+           
+
+
+        
+          </div> <!-- ./panel-group -->
+        </div>
+      </div> <!-- ./container -->
+    </section> <!-- ./tcurrent-openings -->
+
+  </main> <!-- ./default-main -->
+{% endblock %}

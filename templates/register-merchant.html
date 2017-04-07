@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Saiba - Register Merchant</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css"/>
+
+  <!-- Owl Carousel styles -->
+  <link rel="stylesheet" href="/static/css/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="/static/css/owl-carousel/owl.theme.default.css">
+
+  <!-- Theme Styles -->
+  <link rel="stylesheet" href="/static/css/styles.css"/>
+
+  <!-- Modernizr -->
+  <script type="text/javascript" src="/static/js/modernizr.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+  <header id="header-container" class="noBg rm-header">
+    <nav class="navbar navbar-default main-nav">
+{% include "top_links.html" %}
+    </nav>
+
+    <div class="default-carousel register-header">
+      <h1 class="slide-headline">Saiba needs<br />
+        merchants like you</h1>
+      <p class="slide-caption">
+        With Saiba it doesn't matter where your business is located. By partnering with us and selling
+        on our platform, your business scales across East Africa right away. We handle
+        payments and distribution for you while you sit back and do what you do best
+      </p>
+    </div> <!-- ./access-header -->
+
+
+  </header> <!-- #/header-container -->
+
+  <main class="default-main">
+    <section class="default-section register-merchant-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-5 col-lg-push-7">
+            <div class="account-box register">
+              <p class="form-title">
+               {% if messages %}
+              <ul class="messages">
+              {% for message in messages %}
+              <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+              {% endfor %}
+              </ul>
+              {% else %}
+              sign up
+              {% endif %}
+              </p>
+              <form class="form-signin" action="/merchant/register/" method="post">
+              {% csrf_token %}
+
+                  <div class="form-group">
+                  <label class="hidden">name of business</label>
+                  <input type="text" class="form-control" name="business_name" placeholder="name of business" />
+                </div> <!-- ./form-group -->
+
+                <div class="form-group">
+                  <label class="hidden">first name</label>
+                  <input type="text" class="form-control" name="first_name" placeholder="first name" />
+                </div> <!-- ./form-group -->
+
+                <div class="form-group">
+                  <label class="hidden">last name</label>
+                  <input type="text" class="form-control" name="last_name" placeholder="last name" />
+                </div> <!-- ./form-group -->
+                <div class="form-group">
+                  <label class="hidden">mobile number</label>
+                  <input type="text" class="form-control" value="" name="mobile_number" placeholder="mobile number" />
+                </div> <!-- ./form-group -->
+                <div class="form-group">
+                  <label class="hidden">password</label>
+                  <input type="password" class="form-control" value="" name="password" placeholder="password" />
+                </div> <!-- ./form-group -->
+                <div class="form-group">
+                  <label class="hidden">address</label>
+                  <input type="text" class="form-control" name="address" placeholder="address" />
+                </div> <!-- ./form-group -->
+
+                <div class="form-group">
+                  <label class="hidden">email</label>
+                  <input type="email" class="form-control" name="email" placeholder="email" />
+                </div> <!-- ./form-group -->
+
+                <div class="form-group">
+                  <button class="btn btn-default btn-signIn" type="submit">sign up as a merchant</button>
+                </div> <!-- ./form-group -->
+                <div class="form-group new-account">
+                  <label>Already have an account?</label>
+                  <a href="/sign-in-merchant.html" class="btn btn-default btn-newUser">sign in as a merchant</a>
+                </div> <!-- ./new-account -->
+              </form>
+            </div> <!-- ./account-box -->
+          </div> <!-- ./col-2 -->
+          <div class="col-xs-12 col-lg-6 col-lg-pull-6">
+            <div class="merchant-feature-box">
+              <img src="/static/img/pages/register/icon-accept-payments.png" alt="Accept Payments" />
+              <p class="mfb-title">Accept Payments</p>
+              <p class="mfb-text">Saiba keeps all your purchases and expenses in one place enabling you to
+                take advantage of your smartphone to spend and save smartly</p>
+            </div> <!-- ./merchant-feature-box -->
+
+            <div class="merchant-feature-box">
+              <img src="/static/img/pages/register/icon-organize-track-events.png" alt="Organize and Track Events" />
+              <p class="mfb-title">Organize and Track Events</p>
+              <p class="mfb-text">Save money by being given cash back when you spend. Buy airtime and data bundles or
+                pay bills and subscriptions and we give you 6% of what we make.</p>
+            </div> <!-- ./merchant-feature-box -->
+
+            <div class="merchant-feature-box">
+              <img src="/static/img/pages/register/icon-issue-manage-offers.png" alt="Issue and Manage Offers" />
+              <p class="mfb-title">Issue and Manage Offers</p>
+              <p class="mfb-text">Manage your cashflow by borrowing right when you need and repay at your own
+                sweet time. The more you transact the more we can lend you</p>
+            </div> <!-- ./merchant-feature-box -->
+
+            <div class="merchant-feature-box">
+              <img src="/static/img/pages/register/icon-reach-more-customers.png" alt="Reach More Customers" />
+              <p class="mfb-title">Reach More Customers</p>
+              <p class="mfb-text">Save money by being given cash back when you spend. Buy airtime and data
+                bundles or pay bills and subscriptions and we give you 6% of what we make.</p>
+            </div> <!-- ./merchant-feature-box -->
+
+            <div class="merchant-feature-box">
+              <img src="/static/img/pages/register/icon-track-manage-inventory.png" alt="Track and Manage Your Inventory" />
+              <p class="mfb-title">Track and Manage Your Inventory</p>
+              <p class="mfb-text">Manage your cashflow by borrowing right when you need and repay at your own
+                sweet time. The more you transact the more we can lend you</p>
+            </div> <!-- ./merchant-feature-box -->
+          </div> <!-- ./col-1 -->
+
+        </div> <!-- ./row -->
+      </div> <!-- ./container -->
+    </section> <!-- ./register-merchant-section -->
+  </main> <!-- ./default-main -->
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row mobile-target">
+
+  {% include "footer_links_terms.html" %}
+        <div class="col-xs-12 col-sm-6 col-md-8 download-app">
+
+  {% include "appstore_links.html" %}
+
+          <div class="row moveMe">
+          <p class="footer-disclaimer col-xs-12"><strong>Financial institutions play an important role in the Saiba platform</strong>
+          Saiba, Inc. is an agent of Veridian Credit Union and Compass Bank and all funds associated with your
+            account in the Saiba network are held in pooled accounts at Veridian Credit Union and Compass Bank.
+            These funds are not eligible for individual insurance, including FDIC insurance and may not be
+            eligible for share insurance by the National Credit Union Share Insurance Fund. Saiba, Inc.
+            is the operator of a software platform that communicates user instructions for funds transfers
+            to Veridian Credit Union and Compass Bank.</p>
+          </div> <!-- ./row -->
+          <div class="row moveMe">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6">
+              <ul class="social-list">
+                <li class="facebook"><a href="https://www.facebook.com/saibakenya"><i class="fa fa-facebook-official"></i></a></li>
+                <li class="twitter"><a href="https://www.twitter.com/saibakenya"><i class="fa fa-twitter"></i></a></li>
+                <li class="linkedin"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                <li class="github"><a href="#"><i class="fa fa-github"></i></a></li>
+              </ul> <!-- ./social-list -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+              <p class="footer-copyright">&copy; 2016 Cybercity Holdings Limited</p>
+            </div>
+
+          </div> <!-- ./row -->
+        </div> <!-- ./right -->
+      </div> <!-- ./row -->
+    </div> <!-- ./container -->
+  </footer>
+</div>
+<!-- #/wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include js plugin -->
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/jquery.flagstrap.min.js"></script>
+<script src="/static/js/custom.js"></script>
+
+</body>
+</html>

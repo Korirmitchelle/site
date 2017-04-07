@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+</head>
+<body>
+{% extends "admin/base.html" %}
+{% load avatar_tags %}
+{% block userphoto %}
+
+<a href="#">{% avatar user 65 class="circle" %}</a>
+
+
+
+{% endblock %}
+
+</body>
+</html>

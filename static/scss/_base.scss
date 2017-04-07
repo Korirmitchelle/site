@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #000;
+}
+
+.relative {position: relative}
+
+body {
+  font-family: 'TextaAlt';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  background: #fff;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}

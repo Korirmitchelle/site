@@ -1,0 +1,34 @@
+/************************************
+CUSTOM FONTS
+************************************/
+
+@font-face {
+  font-family: 'TextaAlt';
+  src: url('../fonts/TextaAlt/309E4A_2_0.eot');
+  src: url('../fonts/TextaAlt/309E4A_2_0.eot?#iefix') format('embedded-opentype'),
+  //url('../fonts/TextaAlt/309E4A_2_0.woff2') format('woff2'),
+  url('../fonts/TextaAlt/309E4A_2_0.woff') format('woff'),
+  url('../fonts/TextaAlt/309E4A_2_0.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'TextaAlt';
+  src: url('../fonts/TextaAlt/309E4A_1_0.eot');
+  src: url('../fonts/TextaAlt/309E4A_1_0.eot?#iefix') format('embedded-opentype'),
+  //url('../fonts/TextaAlt/309E4A_1_0.woff2') format('woff2'),
+  url('../fonts/TextaAlt/309E4A_1_0.woff') format('woff'),
+  url('../fonts/TextaAlt/309E4A_1_0.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'TextaAlt';
+  src: url('../fonts/TextaAlt/309E4A_0_0.eot');
+  src: url('../fonts/TextaAlt/309E4A_0_0.eot?#iefix') format('embedded-opentype'),
+  //url('../fonts/TextaAlt/309E4A_0_0.woff2') format('woff2'),
+  url('../fonts/TextaAlt/309E4A_0_0.woff') format('woff'),
+  url('../fonts/TextaAlt/309E4A_0_0.ttf') format('truetype');
+  font-weight: 600;
+}
+

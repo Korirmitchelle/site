@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}
+{% endblock %}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css"/>
+
+  <!-- Owl Carousel styles -->
+  <link rel="stylesheet" href="/static/css/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="/static/css/owl-carousel/owl.theme.default.css">
+
+  <!-- Theme Styles -->
+  <link rel="stylesheet" href="/static/css/styles.css"/>
+
+  <!-- Modernizr -->
+  <script type="text/javascript" src="/static/js/modernizr.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+  <header id="home-slider">
+    <nav class="navbar navbar-default main-nav">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#TopNav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="badge">2</span>
+          </button>
+          <a class="navbar-brand" href="/"><img width="125" height="60" src="/static/img/layout/saiba-logo.png" alt="Saiba" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="TopNav">
+          <ul class="nav navbar-nav">
+            <li class="become-a-merchant mobile-only"><a class="btn btn-default" href="#">Download Wallet</a></li>
+            <li class="become-a-merchant mobile-only"><a class="btn btn-default" href="#">Become a Merchant</a></li>
+            <li class="features"><a href="/overview/">Features</a></li>
+            <li class="dropdown products">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <i class="fa fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/wallet/">Wallet</a></li>
+                  <!---
+                <li><a href="/access.html">Access</a></li>
+                <li><a href="/merchant.html">Merchant</a></li>
+                <li><a href="/connect.html">Connect</a></li>
+                -->
+
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right quick-links">
+            <li><a href="/documentation/">Documentation</a></li>
+            <li><a href="http://help.saiba.co.ke/">Help</a></li>
+           <!-- <li class="login"><a href="/sign-in.html">Sign In</a></li>-->
+            <li class="become-a-merchant"><a class="btn btn-default" href="/merchant/register/">Become a Merchant</a></li>
+          </ul>
+
+          <div class="footer-links mobile-only">
+           <!-- <div id="language-options-mobile" data-input-name="language-options-mobile" data-selected-country="US"></div>-->
+            <div class="row">
+              <div class="col-xs-6">
+                <ul class="default-list">
+                  <li><a href="/about/">About</a></li>
+                  <li><a href="/team/">Team</a></li>
+                  <li><a href="/contact/">Contact</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul> <!-- ./footer-links -->
+              </div> <!-- ./left -->
+
+              <div class="col-xs-6">
+                <ul class="default-list">
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Copyright</a></li>
+                </ul> <!-- ./footer-links -->
+              </div> <!-- ./right -->
+            </div> <!-- ./row -->
+          </div> <!-- ./footer-links -->
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+{% block content %}
+{% endblock %}
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row mobile-target">
+        <div class="col-xs-12 col-sm-6 col-md-4 footer-links">
+          <!--<div id="language-options" data-input-name="language-options" data-selected-country="US"></div>-->
+          <div class="row">
+            <div class="col-xs-6">
+              <ul class="default-list">
+                <li><a href="/about/">About</a></li>
+                <li><a href="/team/">Team</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul> <!-- ./footer-links -->
+            </div> <!-- ./left -->
+
+            <div class="col-xs-6">
+              <ul class="default-list">
+                <li><a href="/legal/">Terms</a></li>
+                <li><a href="/legal/">Privacy</a></li>
+                <li><a href="/legal/">Copyright</a></li>
+              </ul> <!-- ./footer-links -->
+            </div> <!-- ./right -->
+          </div> <!-- ./row -->
+
+        </div> <!-- ./left -->
+        <div class="col-xs-12 col-sm-6 col-md-8 download-app">
+
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-5">
+              <p class="footer-title">Download Wallet app</p>
+              <a class="app-link" href="#"><img width="102" height="33" src="/static/img/layout/download-app-store.png" alt="Available on App Store" /></a>
+              <a class="app-link" href="#"><img width="102" height="33" src="/static/img/layout/download-google-play.png" alt="Available on Google Play" /></a>
+            </div> <!-- ./wallet-app -->
+            <div class="col-xs-12 col-md-6 col-lg-5">
+              <p class="footer-title">Download Merchant app</p>
+              <a class="app-link" href="#"><img width="102" height="33" src="/static/img/layout/download-app-store.png" alt="Available on App Store" /></a>
+              <a class="app-link" href="#"><img width="102" height="33" src="/static/img/layout/download-google-play.png" alt="Available on Google Play" /></a>
+            </div> <!-- ./merchant-app -->
+          </div> <!-- ./download-app -->
+
+          <div class="row moveMe">
+          <p class="footer-disclaimer col-xs-12"><strong>Financial institutions play an important role in the Saiba platform</strong>
+          Saiba, Inc. is an agent of Veridian Credit Union and Compass Bank and all funds associated with your
+            account in the Saiba network are held in pooled accounts at Veridian Credit Union and Compass Bank.
+            These funds are not eligible for individual insurance, including FDIC insurance and may not be
+            eligible for share insurance by the National Credit Union Share Insurance Fund. Saiba, Inc.
+            is the operator of a software platform that communicates user instructions for funds transfers
+            to Veridian Credit Union and Compass Bank.</p>
+          </div> <!-- ./row -->
+          <div class="row moveMe">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6">
+              <ul class="social-list">
+                <li class="facebook"><a href="https://www.facebook.com/saibakenya"><i class="fa fa-facebook-official"></i></a></li>
+                <li class="twitter"><a href="https://www.twitter.com/saibakenya"><i class="fa fa-twitter"></i></a></li>
+                <li class="linkedin"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                <li class="github"><a href="#"><i class="fa fa-github"></i></a></li>
+              </ul> <!-- ./social-list -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+              <p class="footer-copyright">&copy; 2016 Cybercity Holdings Limited</p>
+            </div>
+
+          </div> <!-- ./row -->
+        </div> <!-- ./right -->
+      </div> <!-- ./row -->
+    </div> <!-- ./container -->
+  </footer>
+</div>
+<!-- #/wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include js plugin -->
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/jquery.flagstrap.min.js"></script>
+<script src="/static/js/custom.js"></script>
+
+</body>
+</html>
